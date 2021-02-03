@@ -1,0 +1,55 @@
+table{
+    border:5px solid gray ;
+    border-radius: 3%;
+    background-color: lightgray;
+    font-size: larger;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 0.5%;
+    
+    
+}
+
+
+#tarea{
+    height: 100px;
+    width: 400px;
+}
+#addbtn{
+    
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    font-size: large;
+}
+#addblog{
+    
+
+}
+#title{
+    width: 400px;
+}
+#posttitle{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-top: 5px;
+
+}
+#postdescription{
+    font-size: medium;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: honeydew;
+    
+
+}
+#post{
+    background-color: lightgrey;
+    border:5px solid gray ;
+    min-height: 200px;
+    width:300px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top:10px;
+}

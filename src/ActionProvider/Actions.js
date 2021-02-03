@@ -1,6 +1,5 @@
-export const update1=()=>{
-    return {type:'UPDATE'}
-}
-export const clicky=()=>{
-    return {type:'CLICKY'}
+
+export const addBlog=(t,d)=>{
+
+    return {type:'ADDBLOG',data:{title:t,description:d}}
 }

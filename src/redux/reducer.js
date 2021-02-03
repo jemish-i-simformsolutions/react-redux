@@ -1,23 +1,24 @@
 
 
 export const initialState={
-    fname:'jemish',
-    lname:'italiya123'
+   
+    tarray:[],
+    darray:[],
 }
 export const Reducer=(state=initialState,actions)=>{
-    if(actions.type==='UPDATE'){
-        let newfname='keyur';
+    
+    if(actions.type==='ADDBLOG'){
+        let tempT=state.tarray;
+        let tempD=state.darray;
         return{
             ...state,
-            fname:newfname
+            tarray:[...tempT,actions.data.title],
+            darray:[...tempD,actions.data.description]
+            
+            
+            
         }
     }
-    if(actions.type==='CLICKY'){
-        let newlname='amipara';
-        return{
-            ...state,
-            lname:newlname
-        }
-    }
+    
     return state;
 }
