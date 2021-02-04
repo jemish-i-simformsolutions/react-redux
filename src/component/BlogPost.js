@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {addBlog,deleteBlog} from '../ActionProvider/Actions';
 import "../Pro.css";
-import Post from './Post'
-
+import Post from './Post';
+import {ConfigureStore} from '../redux/configureStore'
+const store=ConfigureStore();
 const mapStateToProps=(state)=>{
     return{
         // xyz:state.xyz,
@@ -41,6 +42,7 @@ const mapDispatchToProps=(dispatch)=>{
      
         return(
         <>
+        {console.log(store.getState().blogs)}
         <span id="addblog">
         <table>
         <tbody>
