@@ -12,10 +12,11 @@ export const Reducer=(state=initialState,actions)=>{
        
         let tempBlogs=state.blogs;//.push({title:actions.data.title,description:actions.data.description});
         let tempCount=state.count+1;
+        const timeanddate=new Date();
         return{
             ...state,
             
-            blogs:[...tempBlogs,{id:state.count,title:actions.data.title,description:actions.data.description}],
+            blogs:[...tempBlogs,{id:state.count,title:actions.data.title,description:actions.data.description,date:timeanddate.getDate()+"/"+timeanddate.getMonth()+"/"+timeanddate.getFullYear()}],
             count:tempCount
            
         }

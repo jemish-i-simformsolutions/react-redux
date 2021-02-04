@@ -33,7 +33,6 @@ table{
     font-weight: bold;
     font-size: large;
     text-align: center;
-    margin-top: 10px;
     display: block;
 }
 #postdescription{
@@ -67,4 +66,8 @@ table{
 }
 body{
     background-color: lavender;
+}
+#date{
+    opacity: 50%;
+    margin-left: 5px;
 }

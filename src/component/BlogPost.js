@@ -65,12 +65,15 @@ const mapDispatchToProps=(dispatch)=>{
         <ul>
         {this.props.blogs.map((val)=>{
              return(
+                
              <div id='post' key={val.id.toString()}>
-             <Post  title={val.title} data={val.description}/>
+             <Post  title={val.title} data={val.description} date={val.date} />
              
              <div>
              <button id='dltblog' onClick={()=>this.deleteToArray(val)} >Delete Blog</button>
-           
+          
+             
+             
              </div>
              </div>
              );
@@ -86,3 +89,4 @@ const mapDispatchToProps=(dispatch)=>{
     }
 }
 export default (connect(mapStateToProps,mapDispatchToProps)(BlogPost));
+
