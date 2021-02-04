@@ -7,4 +7,4 @@ export const ConfigureStore=()=>{
      initialState
     );
     return store;
-};
+};   

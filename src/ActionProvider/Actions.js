@@ -1,5 +1,8 @@
 
-export const addBlog=(t,d)=>{
+export const addBlog=(title,description)=>{
 
-    return {type:'ADDBLOG',data:{title:t,description:d}}
+    return {type:'ADDBLOG',data:{title:title,description:description}}
+}
+export const deleteBlog=(val)=>{
+    return {type:'DELETEBLOG', data:val}
 }
