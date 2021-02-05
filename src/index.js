@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Pro.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  BlogPost  from "./component/BlogPost";
 import { Provider } from 'react-redux';
@@ -9,7 +8,7 @@ import { ConfigureStore } from './redux/configureStore';
 const store=ConfigureStore();
 ReactDOM.render(
   
-    //<App />
+    
     <Provider store={store}>
     <BlogPost/>
     </Provider>

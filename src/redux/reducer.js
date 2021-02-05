@@ -19,10 +19,10 @@ export const Reducer=(state=initialState,actions)=>{
             };
             case 'DELETEBLOG':
                 let tempArray=state.blogs.filter((val)=>actions.data.id!==val.id);
-                let tempCount1=state.count-1;
-                return {...state,
-                blogs:tempArray,
-                count:tempCount1
+               
+                return{
+                ...state,
+                blogs:tempArray
                 };
             
             default:return state;
